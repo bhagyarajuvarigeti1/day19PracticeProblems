@@ -29,8 +29,6 @@ public class UserRegistrationProblem {
         if(matcher.matches()){
             System.out.println("vaild");
         }
-        else {
-            System.out.println("not Valid");
-        }
+        else System.out.println("not Valid");
     }
 }
