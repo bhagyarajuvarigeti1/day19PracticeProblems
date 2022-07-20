@@ -22,6 +22,15 @@ public class UserRegistrationProblem {
         if(matcher2.matches()){
             System.out.println("Valid Last Name");
         }else System.out.println("Not valid");
-        
+        System.out.println("Enter the User Email");
+        String gmail = in.nextLine();
+        Pattern pattern = Pattern.compile("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$");
+        Matcher matcher = pattern.matcher(gmail);
+        if(matcher.matches()){
+            System.out.println("vaild");
+        }
+        else {
+            System.out.println("not Valid");
+        }
     }
 }
