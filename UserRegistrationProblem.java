@@ -30,5 +30,15 @@ public class UserRegistrationProblem {
             System.out.println("vaild");
         }
         else System.out.println("not Valid");
+        System.out.println("Enter Phone Number ");
+        String phoneNO = in.nextLine();
+        Pattern pattern2 = Pattern.compile("^(?:(?:\\+|0{0,2})91(\\s*[\\ -]\\s*)?|[0]?)?[789]\\d{9}|(\\d[ -]?){10}\\d$");
+        Matcher matcher3 = pattern2.matcher(phoneNO);
+        if(matcher3.matches()){
+            System.out.println("valid phone number");
+        }
+        else{
+            System.out.println("Not a valid Phone number");
+        }
     }
 }
