@@ -15,5 +15,13 @@ public class UserRegistrationProblem {
             System.out.println("Valid First Name");
         }
         else System.out.println("Not valid");
+        System.out.println("Enter last Name");
+        String lastName = in.nextLine();
+
+        Matcher matcher2 = pattern1.matcher(lastName);
+        if(matcher2.matches()){
+            System.out.println("Valid Last Name");
+        }else System.out.println("Not valid");
+        
     }
 }
