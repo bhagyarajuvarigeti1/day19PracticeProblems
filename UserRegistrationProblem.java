@@ -40,5 +40,13 @@ public class UserRegistrationProblem {
         else{
             System.out.println("Not a valid Phone number");
         }
+        System.out.println("Enter Password");
+        String password = in.nextLine();
+        Pattern pattern3 = Pattern.compile("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$");
+        Matcher matcher4 = pattern3.matcher(password);
+        if(matcher4.matches()){
+            System.out.println("valid password");
+        }
+        else System.out.println("not valid password");
     }
 }
